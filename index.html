@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+                Rating
+	</title>
+                <script src="jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="flip.css">
+
+        
+        
+        
+<script>
+    
+    $(document).ready(function(){
+        
+     $('.normal_bg').click(function(){
+        $('.normal_bg').animate({width:'0px',marginLeft:'115',opacity:'0.5'},{duration:'50',
+            complete:function(){
+            $('.hover_bg').animate({width:"230px",marginLeft:'0',opacity:'1'},{duration:'50'});
+           }
+        });
+       
+     });
+    $('.hover_bg').click( function(){
+     $('.hover_bg').animate({width:'0px',marginLeft:'115',opacity:'0.5'},{duration:'50',
+            complete:function(){
+            $('.normal_bg').animate({width:"230px",marginLeft:'0',opacity:'1'},{duration:'50'});
+           }
+        });
+     });
+     
+     
+     
+     
+     
+     
+    })
+    
+    
+</script>
+
+</head>
+
+
+
+<body>
+    
+    <div class="box">
+        <ul>
+            <li ><img class="normal_bg" src="1.jpg"/></li>
+            <li ><img class="hover_bg" src="2.jpg"/></li>
+        </ul>
+    </div>
+    
+    
+    
+
+</body>
+</html>
